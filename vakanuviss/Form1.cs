@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Vakanuvis;
+
+namespace vakanuviss
+{
+    public partial class Login : Form
+    {
+        private FirebaseService firebaseService = new FirebaseService("AIzaSyDCbIatckAFYkziLAJJjrccuEgwcxZGKB8");
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void button_login_Click(object sender, EventArgs e)
+        {
+            string email = textBox_email.Text.Trim();
+            string password = textBox_password.Text.Trim();
+
+            // Email ve password boş değilse, kullanıcıyı giriş yapmaya çalış
+            if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
+            {
+                var user = await firebaseService.LoginAsync(email, password);
+                if(user != null)
+                {
+                    HomeForm homeForm = new HomeForm();
+                    this.Hide();
+                    homeForm.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Email ve şifre alanları doldurulmalıdır.");
+            }
+
+        }
+    }
+}
