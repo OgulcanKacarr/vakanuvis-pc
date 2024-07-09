@@ -50,3 +50,4 @@ C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.cspro
 C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.exe
 C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.pdb
 C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.RegisterForm.resources
+C:\Users\oglcn\source\repos\vakanuvis-pc\vakanuviss\obj\Debug\vakanuviss.RegisterForm.resources

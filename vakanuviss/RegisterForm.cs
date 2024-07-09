@@ -19,7 +19,7 @@ namespace vakanuviss
 
         private void signin_btn_Click(object sender, EventArgs e)
         {
-            Form1 loginForm = new Form1();
+            Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
         }
