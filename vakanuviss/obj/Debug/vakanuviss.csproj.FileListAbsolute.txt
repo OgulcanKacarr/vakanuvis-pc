@@ -32,3 +32,25 @@ C:\Users\oglcn\Source\Repos\vakanuvis-pc\vakanuviss\obj\Debug\vakanuviss.csproj.
 C:\Users\oglcn\Source\Repos\vakanuvis-pc\vakanuviss\obj\Debug\vakanuviss.csproj.Up2Date
 C:\Users\oglcn\Source\Repos\vakanuvis-pc\vakanuviss\obj\Debug\vakanuviss.exe
 C:\Users\oglcn\Source\Repos\vakanuvis-pc\vakanuviss\obj\Debug\vakanuviss.pdb
+<<<<<<< HEAD
+=======
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\vakanuviss.exe.config
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\vakanuviss.exe
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\vakanuviss.pdb
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\Firebase.Auth.dll
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\Newtonsoft.Json.dll
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\Newtonsoft.Json.xml
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.csproj.AssemblyReference.cache
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.Login.resources
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.HomeForm.resources
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.Properties.Resources.resources
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.csproj.GenerateResource.cache
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.csproj.CoreCompileInputs.cache
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.csproj.Up2Date
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.exe
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.pdb
+C:\Users\selin\Desktop\vakanuvis-pc-master\vakanuviss\obj\Debug\vakanuviss.RegisterForm.resources
+C:\Users\oglcn\source\repos\vakanuvis-pc\vakanuviss\obj\Debug\vakanuviss.RegisterForm.resources
+>>>>>>> temp-selin

@@ -46,5 +46,30 @@ namespace vakanuviss
             }
 
         }
+
+
+
+        private void vakanuvis_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_lbl_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void register_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void register_btn_Click(object sender, EventArgs e)
+        {
+            RegisterForm regForm = new RegisterForm();
+            regForm.Show();
+            this.Hide();
+        }
+
     }
 }
