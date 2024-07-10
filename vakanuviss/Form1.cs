@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Vakanuvis;
 
@@ -33,7 +26,7 @@ namespace vakanuviss
             if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
                 var user = await firebaseService.LoginAsync(email, password);
-                if(user != null)
+                if (user != null)
                 {
                     HomeForm homeForm = new HomeForm();
                     this.Hide();

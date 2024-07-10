@@ -25,10 +25,11 @@ namespace Vakanuvis
                 var auth = await authProvider.SignInWithEmailAndPasswordAsync(email, password);
                 return auth;
             }
-            catch (FirebaseAuthException ex) {
+            catch (FirebaseAuthException ex)
+            {
 
-                 MessageBox.Show($"hata: {ex.Reason}");
-                return  null;
+                MessageBox.Show($"hata: {ex.Reason}");
+                return null;
             }
         }
     }
