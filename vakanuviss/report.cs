@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace vakanuviss
 {
-    public partial class HomeForm : Form
+    public partial class report : Form
     {
-        public HomeForm()
+        public report()
         {
             InitializeComponent();
-        }
-
-        private void exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit(); 
         }
     }
 }

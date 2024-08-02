@@ -68,5 +68,18 @@ namespace vakanuviss
             regForm.Show();
             this.Hide();
         }
+
+        private void signin_showpas_CheckedChanged(object sender, EventArgs e)
+        {
+            if (signin_showpas.Checked)
+            {
+                textBox_password.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox_password.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
+

@@ -31,17 +31,16 @@
             this.register_showpas = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.register_logo = new System.Windows.Forms.PictureBox();
             this.vakanuvis_lbl = new System.Windows.Forms.Label();
             this.register_lbl = new System.Windows.Forms.Label();
             this.signin_btn = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button_register = new System.Windows.Forms.Button();
             this.label_password = new System.Windows.Forms.Label();
             this.label_email = new System.Windows.Forms.Label();
             this.register_password = new System.Windows.Forms.TextBox();
             this.register_email = new System.Windows.Forms.TextBox();
             this.register_exit = new System.Windows.Forms.Label();
+            this.register_logo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.register_logo)).BeginInit();
             this.SuspendLayout();
@@ -49,12 +48,13 @@
             // register_showpas
             // 
             this.register_showpas.AutoSize = true;
-            this.register_showpas.Location = new System.Drawing.Point(551, 231);
+            this.register_showpas.Location = new System.Drawing.Point(543, 231);
             this.register_showpas.Name = "register_showpas";
             this.register_showpas.Size = new System.Drawing.Size(88, 17);
             this.register_showpas.TabIndex = 17;
             this.register_showpas.Text = "Şifreyi Göster";
             this.register_showpas.UseVisualStyleBackColor = true;
+            this.register_showpas.CheckedChanged += new System.EventHandler(this.register_showpas_CheckedChanged);
             // 
             // label2
             // 
@@ -76,16 +76,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(297, 383);
             this.panel1.TabIndex = 15;
-            // 
-            // register_logo
-            // 
-            this.register_logo.Image = global::vakanuviss.Properties.Resources.tr1;
-            this.register_logo.Location = new System.Drawing.Point(75, 30);
-            this.register_logo.Name = "register_logo";
-            this.register_logo.Size = new System.Drawing.Size(150, 150);
-            this.register_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.register_logo.TabIndex = 7;
-            this.register_logo.TabStop = false;
             // 
             // vakanuvis_lbl
             // 
@@ -127,16 +117,6 @@
             this.signin_btn.UseVisualStyleBackColor = false;
             this.signin_btn.Click += new System.EventHandler(this.signin_btn_Click);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(346, 232);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(94, 13);
-            this.linkLabel1.TabIndex = 14;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Şifreni mi unuttun?";
-            // 
             // button_register
             // 
             this.button_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(143)))), ((int)(((byte)(121)))));
@@ -175,17 +155,18 @@
             // 
             // register_password
             // 
-            this.register_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.register_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.register_password.Location = new System.Drawing.Point(339, 195);
             this.register_password.Multiline = true;
             this.register_password.Name = "register_password";
             this.register_password.PasswordChar = '*';
             this.register_password.Size = new System.Drawing.Size(292, 30);
             this.register_password.TabIndex = 9;
+            this.register_password.UseSystemPasswordChar = true;
             // 
             // register_email
             // 
-            this.register_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.register_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.register_email.Location = new System.Drawing.Point(339, 128);
             this.register_email.Multiline = true;
             this.register_email.Name = "register_email";
@@ -202,6 +183,16 @@
             this.register_exit.TabIndex = 19;
             this.register_exit.Text = "X";
             // 
+            // register_logo
+            // 
+            this.register_logo.Image = global::vakanuviss.Properties.Resources.tr1;
+            this.register_logo.Location = new System.Drawing.Point(75, 30);
+            this.register_logo.Name = "register_logo";
+            this.register_logo.Size = new System.Drawing.Size(150, 150);
+            this.register_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.register_logo.TabIndex = 7;
+            this.register_logo.TabStop = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,7 +203,6 @@
             this.Controls.Add(this.register_showpas);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button_register);
             this.Controls.Add(this.label_password);
             this.Controls.Add(this.label_email);
@@ -220,6 +210,7 @@
             this.Controls.Add(this.register_email);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -238,7 +229,6 @@
         private System.Windows.Forms.Label vakanuvis_lbl;
         private System.Windows.Forms.Label register_lbl;
         private System.Windows.Forms.Button signin_btn;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button_register;
         private System.Windows.Forms.Label label_password;
         private System.Windows.Forms.Label label_email;

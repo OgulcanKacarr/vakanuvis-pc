@@ -36,21 +36,21 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.register_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.vakanuvis_lbl = new System.Windows.Forms.Label();
             this.register_lbl = new System.Windows.Forms.Label();
             this.exit_lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.signin_showpas = new System.Windows.Forms.CheckBox();
-            this.gif_pctrebox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gif_pctrebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_email
             // 
-            this.textBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox_email.Location = new System.Drawing.Point(340, 165);
             this.textBox_email.Multiline = true;
             this.textBox_email.Name = "textBox_email";
@@ -59,7 +59,7 @@
             // 
             // textBox_password
             // 
-            this.textBox_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox_password.Location = new System.Drawing.Point(340, 232);
             this.textBox_password.Multiline = true;
             this.textBox_password.Name = "textBox_password";
@@ -145,6 +145,16 @@
             this.panel1.Size = new System.Drawing.Size(297, 383);
             this.panel1.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::vakanuviss.Properties.Resources.tr1;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // vakanuvis_lbl
             // 
             this.vakanuvis_lbl.AutoSize = true;
@@ -197,26 +207,17 @@
             this.signin_showpas.TabIndex = 8;
             this.signin_showpas.Text = "Şifreyi Göster";
             this.signin_showpas.UseVisualStyleBackColor = true;
+            this.signin_showpas.CheckedChanged += new System.EventHandler(this.signin_showpas_CheckedChanged);
             // 
-            // gif_pctrebox
+            // pictureBox2
             // 
-            this.gif_pctrebox.Image = global::vakanuviss.Properties.Resources.logo_gif;
-            this.gif_pctrebox.Location = new System.Drawing.Point(422, 30);
-            this.gif_pctrebox.Name = "gif_pctrebox";
-            this.gif_pctrebox.Size = new System.Drawing.Size(128, 90);
-            this.gif_pctrebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gif_pctrebox.TabIndex = 9;
-            this.gif_pctrebox.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::vakanuviss.Properties.Resources.tr1;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox2.Image = global::vakanuviss.Properties.Resources.logo_gif;
+            this.pictureBox2.Location = new System.Drawing.Point(414, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(127, 95);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // Login
             // 
@@ -224,7 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(651, 383);
-            this.Controls.Add(this.gif_pctrebox);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.signin_showpas);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.exit_lbl);
@@ -242,8 +243,8 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gif_pctrebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,7 +266,7 @@
         private System.Windows.Forms.Label register_lbl;
         private System.Windows.Forms.Label vakanuvis_lbl;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox gif_pctrebox;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
